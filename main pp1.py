@@ -24,7 +24,6 @@ for i in range(1,br_prodaja+1):
 
 for i,prodaja in enumerate(prodaje, start = 1):
     print(f"Prodaja {i}")
-2
-ispis_prodaje(prodaja)
+    ispis_prodaje(prodaja)
 
 
