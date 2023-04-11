@@ -4,6 +4,7 @@ def ispis_korisnika(korisnik):
     print(f"\tPrezime: {korisnik['prezime']}")
     print(f"\tTelefon: {korisnik['telefon']}")
     print(f"\tEmail: {korisnik['email']}")
+    print(f"\tOIB: {korisnik['osobna']['oib']}")
 
 def get_korisnik(redni_broj, korisnik):
     return f"{redni_broj}.  {korisnik['ime']} {korisnik['prezime']}"
