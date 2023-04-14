@@ -9,3 +9,7 @@ def ispis_prodaje(prodaja):
     print(f"\tMjesec: {prodaja['datum'].month}")
     print(f"\tGodina: {prodaja['datum'].year}")
     print('-' * 20)
+
+def ispis_svih_prodaja(prodaje):
+    for prodaja in prodaje:
+        ispis_prodaje(prodaja)
