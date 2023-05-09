@@ -36,8 +36,8 @@ def unos_datuma(poruka):
     while True:
             try:
                 dan = int(input(poruka))
-                mjesec = int(input(f'Unesite mjesec isteka prodaje: '))
-                godina = int(input(f'Unesite godinu isteka prodaje: '))
+                mjesec = int(input(f'Unesite mjesec isteka: '))
+                godina = int(input(f'Unesite godinu isteka: '))
                 datum = date(godina, mjesec, dan)
 
             except ValueError as e:
