@@ -1,1 +1,0 @@
-from .zdravstvena import Zdravstvena
