@@ -1,3 +1,3 @@
 def get_artikl(redni_broj, artikl):
-    return f"{redni_broj}. {artikl.naslov}"
+    print(f"\t{redni_broj}. {artikl.naslov}")
 

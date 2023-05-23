@@ -29,3 +29,6 @@ class PrivatniKorisnik(Korisnik):
       print(f'\tPrezime: {self.__prezime}')
       print(f'\tTelefon: {self.telefon}')
       print(f'\tEmail: {self.email}')
+
+
+

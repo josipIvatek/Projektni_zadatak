@@ -12,3 +12,5 @@ class Stan(Artikl):
         print(f'\t Opis: {self.opis}')
         print(f'\t Cijena: {self.cijena}')
         print(f'\t Kvadratura: {self.kvadratura}')
+
+

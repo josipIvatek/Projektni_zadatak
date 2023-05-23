@@ -1,6 +1,7 @@
 from abc import ABC,abstractmethod
+
 class Korisnik(ABC):
-    def __init__(self,email, telefon):
+    def __init__(self, email, telefon):
         self._email = email
         self._telefon = telefon
 
@@ -15,3 +16,5 @@ class Korisnik(ABC):
     @abstractmethod
     def ispis(self):
         pass
+
+
