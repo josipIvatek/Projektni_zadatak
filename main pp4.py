@@ -162,17 +162,19 @@ class App(QtWidgets.QMainWindow):
 
         if self.tip_korisnika.currentText() == TipKorisnika.PRIVATNI.value:
             error_privatni = provjera_korisnickog_unosa(self.text_telefon.text(), self.text_email.text()
-                                                   ,self.text_ime.text() or self.text_naziv, self.text_prezime.text(), self.text_drzavljanstvo.text())
+                                                   ,self.text_ime.text(), self.text_prezime.text(), self.text_drzavljanstvo.text())
             if error_privatni is None:
                 korisnici.append(PrivatniKorisnik(self.text_ime.text(), self.text_prezime.text(),
                                                  self.text_email.text(), self.text_telefon.text(), self.text_drzavljanstvo.text()))
                 self.text_telefon.setText('')
                 self.text_email.setText('')
+                self.text_drzavljanstvo.setText('')
                 self.text_naziv.setText('')
                 self.text_web.setText('')
                 self.text_ime.setText('')
                 self.text_prezime.setText('')
                 self.label_error.setText('')
+                self.text_oib.setText('')
 
                 korisnik = korisnici[len(korisnici)-1]
                 korisnik.ispis()
@@ -187,11 +189,13 @@ class App(QtWidgets.QMainWindow):
                                               self.text_email.text(), self.text_telefon.text(), self.text_oib.text()))
                 self.text_telefon.setText('')
                 self.text_email.setText('')
+                self.text_drzavljanstvo.setText('')
                 self.text_naziv.setText('')
                 self.text_web.setText('')
                 self.text_ime.setText('')
                 self.text_prezime.setText('')
                 self.label_error.setText('')
+                self.text_oib.setText('')
 
                 korisnik = korisnici[len(korisnici)-1]
                 korisnik.ispis()
