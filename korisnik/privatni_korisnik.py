@@ -2,7 +2,7 @@ from .korisnik import Korisnik
 
 class PrivatniKorisnik(Korisnik):
 
-    def __init__(self, ime, prezime, email, telefon, drzavljanstvo):
+    def __init__(self, ime, prezime, drzavljanstvo, email, telefon):
         super().__init__(email, telefon)
         self.__ime = ime
         self.__prezime = prezime
