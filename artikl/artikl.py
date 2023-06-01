@@ -34,4 +34,3 @@ class Artikl(ABC):
     @abstractmethod
     def ispis(self):
         pass
-

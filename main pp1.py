@@ -4,7 +4,7 @@ import sys
 from enumeratori import TipKorisnika
 from korisnik import PoslovniKorisnik, PrivatniKorisnik
 
-from utilities import provjera_korisnickog_unos
+from utilities import provjera_korisnickog_unosa
 
 
 korisnici = []
@@ -132,7 +132,7 @@ class App(QtWidgets.QMainWindow):
     def unos_korisnika(self):
 
         if self.tip_korisnika.currentText() == TipKorisnika.PRIVATNI.value:
-            error_privatni = provjera_korisnickog_unos(self.text_telefon.text(), self.text_email.text()
+            error_privatni = provjera_korisnickog_unosa(self.text_telefon.text(), self.text_email.text()
                                                    ,self.text_ime.text() or self.text_naziv, self.text_prezime.text())
             if error_privatni is None:
                 korisnici.append(PrivatniKorisnik(self.text_ime.text(), self.text_prezime.text(),
@@ -151,7 +151,7 @@ class App(QtWidgets.QMainWindow):
                 self.label_error.setText(error_privatni)
 
         elif self.tip_korisnika.currentText() == TipKorisnika.POSLOVNI.value:
-            error_poslovni = provjera_korisnickog_unos(self.text_telefon.text(), self.text_email.text()
+            error_poslovni = provjera_korisnickog_unosa(self.text_telefon.text(), self.text_email.text()
                                                        , self.text_naziv.text(), self.text_web.text())
             if error_poslovni is None:
                 korisnici.append(PoslovniKorisnik(self.text_naziv.text(), self.text_web.text(),

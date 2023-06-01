@@ -24,6 +24,3 @@ def unos_korisnika(redni_broj):
         prezime = input(f'Unesite prezime {redni_broj}. korisnika: ').capitalize()
 
         return PrivatniKorisnik(ime, prezime, telefon, email)
-
-
-
