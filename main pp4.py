@@ -69,15 +69,15 @@ class App(QtWidgets.QMainWindow):
         self.text_prezime = QtWidgets.QLineEdit(self)
         self.text_prezime.setGeometry(QtCore.QRect(150, offset * 5, 150, 25))
 
-        # Input drzavljanstvo
-        self.label_web = QtWidgets.QLabel(self)
-        self.label_web.setFont(self.font)
-        self.label_web.setText('Drzavljanstvo')
-        self.label_web.move(50, offset * 6)
+        #Label drzavljanstvo
+        self.label_drzavljanstvo = QtWidgets.QLabel(self)
+        self.label_drzavljanstvo.setFont(self.font)
+        self.label_drzavljanstvo.setText('Drzavljanstvo')
+        self.label_drzavljanstvo.move(50, offset * 6)
 
-        # Input drzavljanstvo
-        self.text_web = QtWidgets.QLineEdit(self)
-        self.text_web.setGeometry(QtCore.QRect(150, offset * 6, 150, 25))
+        #Input drzavljanstvo
+        self.text_drzavljanstvo = QtWidgets.QLineEdit(self)
+        self.text_drzavljanstvo.setGeometry(QtCore.QRect(150, offset * 6, 150, 25))
 
         #Label naziv
         self.label_naziv = QtWidgets.QLabel(self)
@@ -86,34 +86,34 @@ class App(QtWidgets.QMainWindow):
         self.label_naziv.move(50, offset * 4)
         self.label_naziv.hide()
 
-        # Input naziv
+        #Input naziv
         self.text_naziv = QtWidgets.QLineEdit(self)
         self.text_naziv.setGeometry(QtCore.QRect(150, offset * 4, 150, 25))
         self.text_naziv.hide()
 
-        #Input web
+        #Label web
         self.label_web = QtWidgets.QLabel(self)
         self.label_web.setFont(self.font)
         self.label_web.setText('Web')
         self.label_web.move(50, offset * 5)
         self.label_web.hide()
 
-        # Input web
+        #Input web
         self.text_web = QtWidgets.QLineEdit(self)
         self.text_web.setGeometry(QtCore.QRect(150, offset * 5, 150, 25))
         self.text_web.hide()
 
-        # Input oib
-        self.label_web = QtWidgets.QLabel(self)
-        self.label_web.setFont(self.font)
-        self.label_web.setText('OIB')
-        self.label_web.move(50, offset * 6)
-        self.label_web.hide()
+        #Label oib
+        self.label_oib = QtWidgets.QLabel(self)
+        self.label_oib.setFont(self.font)
+        self.label_oib.setText('OIB')
+        self.label_oib.move(50, offset * 6)
+        self.label_oib.hide()
 
-        # Input oib
-        self.text_web = QtWidgets.QLineEdit(self)
-        self.text_web.setGeometry(QtCore.QRect(150, offset * 6, 150, 25))
-        self.text_web.hide()
+        #Input oib
+        self.text_oib = QtWidgets.QLineEdit(self)
+        self.text_oib.setGeometry(QtCore.QRect(150, offset * 6, 150, 25))
+        self.text_oib.hide()
 
         #Label error
         self.label_error = QtWidgets.QLabel(self)
