@@ -166,15 +166,17 @@ class App(QtWidgets.QMainWindow):
             if error_privatni is None:
                 korisnici.append(PrivatniKorisnik(self.text_ime.text(), self.text_prezime.text(), self.text_drzavljanstvo.text(),
                                                  self.text_email.text(), self.text_telefon.text()))
-                self.text_telefon.setText('')
-                self.text_email.setText('')
-                self.text_drzavljanstvo.setText('')
-                self.text_naziv.setText('')
-                self.text_web.setText('')
+                
                 self.text_ime.setText('')
                 self.text_prezime.setText('')
-                self.label_error.setText('')
+                self.text_drzavljanstvo.setText('')
+                self.text_email.setText('')
+                self.text_telefon.setText('')
+                self.text_naziv.setText('')
+                self.text_web.setText('')
                 self.text_oib.setText('')
+                self.label_error.setText('')
+
 
                 korisnik = korisnici[len(korisnici)-1]
                 korisnik.ispis()
@@ -187,15 +189,15 @@ class App(QtWidgets.QMainWindow):
             if error_poslovni is None:
                 korisnici.append(PoslovniKorisnik(self.text_naziv.text(), self.text_web.text(), self.text_oib.text(),
                                               self.text_email.text(), self.text_telefon.text()))
-                self.text_telefon.setText('')
-                self.text_email.setText('')
-                self.text_drzavljanstvo.setText('')
                 self.text_naziv.setText('')
                 self.text_web.setText('')
+                self.text_oib.setText('')
+                self.text_email.setText('')
+                self.text_telefon.setText('')
                 self.text_ime.setText('')
                 self.text_prezime.setText('')
+                self.text_drzavljanstvo.setText('')
                 self.label_error.setText('')
-                self.text_oib.setText('')
 
                 korisnik = korisnici[len(korisnici)-1]
                 korisnik.ispis()
