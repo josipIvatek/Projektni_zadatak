@@ -24,13 +24,6 @@ class PoslovniKorisnik(Korisnik):
     def web(self, web):
         self.__web = web
 
-    @property
-    def oib(self):
-        return self.oib
-
-    @oib.setter
-    def oib(self, oib):
-        self.oib = oib
 
     def ispis(self):
       print("Informacije o poslovnom korisniku: ")

@@ -24,14 +24,6 @@ class PrivatniKorisnik(Korisnik):
     def prezime(self, prezime):
         self.__prezime = prezime
 
-    @property
-    def drzavljanstvo(self):
-        return self.drzavljanstvo
-
-    @drzavljanstvo.setter
-    def drzavljanstvo(self, drzavljanstvo):
-        self.drzavljanstvo = drzavljanstvo
-
     def ispis(self):
       print("Informacije o privatnom korisniku: ")
       print(f'\tIme: {self.__ime}')
